@@ -1,0 +1,348 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduVibe - Learn Something New</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="#home" class="logo">edu<span>vibe.</span></a>
+
+    <button class="menu-toggle" id="menuToggle">☰</button>
+
+    <nav id="navMenu">
+        <a href="#home">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#instructors">Instructors</a>
+        <a href="#reviews">Reviews</a>
+    </nav>
+
+    <div class="nav-actions">
+        <button class="login-btn" id="loginBtn">Log in</button>
+        <a href="#courses" class="nav-join">Join for free ↗</a>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="hero-left">
+        <span class="hero-tag">✦ LEARN WITHOUT LIMITS</span>
+        <h1>Grow your skills.<br>Shape your <span>future.</span></h1>
+        <p class="hero-desc">
+            Explore expert-led courses, discover new passions, and turn
+            your curiosity into skills that matter.
+        </p>
+
+        <div class="hero-actions">
+            <a href="#courses" class="primary-btn">Explore courses ↗</a>
+            <a href="#instructors" class="secondary-btn">Meet our mentors</a>
+        </div>
+
+        <div class="hero-stats">
+            <div><strong>12K<span>+</span></strong><small>Happy learners</small></div>
+            <div><strong>85<span>+</span></strong><small>Expert courses</small></div>
+            <div><strong>4.9<span>/5</span></strong><small>Average rating</small></div>
+        </div>
+    </div>
+
+    <div class="hero-right">
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1000&q=85" alt="Students learning together">
+        </div>
+        <div class="hero-float float-top">
+            <div class="float-icon">✦</div>
+            <div><strong>Learn at your pace</strong><small>Anytime, anywhere</small></div>
+        </div>
+        <div class="hero-float float-bottom">
+            <div class="avatar-stack">
+                <img src="https://i.pravatar.cc/60?img=12" alt="Student">
+                <img src="https://i.pravatar.cc/60?img=32" alt="Student">
+                <img src="https://i.pravatar.cc/60?img=47" alt="Student">
+            </div>
+            <div><strong>Join our community</strong><small>Learning is better together</small></div>
+        </div>
+    </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="categories">
+    <p>EXPLORE YOUR INTERESTS</p>
+    <div class="category-list">
+        <button class="category active" data-category="all">✦ All courses</button>
+        <button class="category" data-category="design">🎨 Design</button>
+        <button class="category" data-category="development">💻 Development</button>
+        <button class="category" data-category="business">📊 Business</button>
+        <button class="category" data-category="marketing">📣 Marketing</button>
+    </div>
+</section>
+
+<!-- COURSES -->
+<section class="courses section-padding" id="courses">
+    <div class="section-heading">
+        <div>
+            <span class="section-tag">LEARN. CREATE. ACHIEVE.</span>
+            <h2>Find your next <span>favorite</span> course.</h2>
+        </div>
+        <div class="search-box">
+            <span>⌕</span>
+            <input type="text" id="courseSearch" placeholder="Search a course...">
+        </div>
+    </div>
+
+    <div class="course-grid" id="courseGrid">
+
+        <article class="course-card" data-category="design" data-title="UI UX Design">
+            <div class="course-image">
+                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=85" alt="UI UX design workspace">
+                <span class="course-badge">BESTSELLER</span>
+            </div>
+            <div class="course-info">
+                <div class="course-meta"><span>🎨 Design</span><span>⏱ 8 hours</span></div>
+                <h3>UI/UX Design: From Zero to Pro</h3>
+                <p>Learn to design beautiful digital experiences using modern design principles.</p>
+                <div class="instructor-mini">
+                    <img src="https://i.pravatar.cc/100?img=44" alt="Instructor">
+                    <span>Sarah Mitchell</span>
+                    <span class="rating">★ 4.9</span>
+                </div>
+                <div class="course-footer"><strong>₹799</strong><button class="enroll-btn" data-course="UI/UX Design: From Zero to Pro" data-price="₹799">Enroll ↗</button></div>
+            </div>
+        </article>
+
+        <article class="course-card" data-category="development" data-title="Web Development">
+            <div class="course-image">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=85" alt="Web development code">
+                <span class="course-badge green-badge">POPULAR</span>
+            </div>
+            <div class="course-info">
+                <div class="course-meta"><span>💻 Development</span><span>⏱ 12 hours</span></div>
+                <h3>Complete Web Development Bootcamp</h3>
+                <p>Build responsive websites with HTML, CSS and JavaScript from scratch.</p>
+                <div class="instructor-mini">
+                    <img src="https://i.pravatar.cc/100?img=11" alt="Instructor">
+                    <span>Alex Johnson</span>
+                    <span class="rating">★ 4.8</span>
+                </div>
+                <div class="course-footer"><strong>₹999</strong><button class="enroll-btn" data-course="Complete Web Development Bootcamp" data-price="₹999">Enroll ↗</button></div>
+            </div>
+        </article>
+
+        <article class="course-card" data-category="business" data-title="Business Strategy">
+            <div class="course-image">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=85" alt="Business analytics">
+                <span class="course-badge orange-badge">NEW</span>
+            </div>
+            <div class="course-info">
+                <div class="course-meta"><span>📊 Business</span><span>⏱ 6 hours</span></div>
+                <h3>Business Strategy & Entrepreneurship</h3>
+                <p>Turn your ideas into a business with smart strategy and planning.</p>
+                <div class="instructor-mini">
+                    <img src="https://i.pravatar.cc/100?img=68" alt="Instructor">
+                    <span>David Carter</span>
+                    <span class="rating">★ 4.7</span>
+                </div>
+                <div class="course-footer"><strong>₹699</strong><button class="enroll-btn" data-course="Business Strategy & Entrepreneurship" data-price="₹699">Enroll ↗</button></div>
+            </div>
+        </article>
+
+        <article class="course-card" data-category="marketing" data-title="Digital Marketing">
+            <div class="course-image">
+                <img src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?auto=format&fit=crop&w=800&q=85" alt="Digital marketing workspace">
+            </div>
+            <div class="course-info">
+                <div class="course-meta"><span>📣 Marketing</span><span>⏱ 7 hours</span></div>
+                <h3>Digital Marketing Essentials</h3>
+                <p>Master social media, content creation, SEO and online growth.</p>
+                <div class="instructor-mini">
+                    <img src="https://i.pravatar.cc/100?img=49" alt="Instructor">
+                    <span>Emily Rose</span>
+                    <span class="rating">★ 4.9</span>
+                </div>
+                <div class="course-footer"><strong>₹599</strong><button class="enroll-btn" data-course="Digital Marketing Essentials" data-price="₹599">Enroll ↗</button></div>
+            </div>
+        </article>
+
+        <article class="course-card" data-category="design" data-title="Graphic Design">
+            <div class="course-image">
+                <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=800&q=85" alt="Creative graphic design">
+            </div>
+            <div class="course-info">
+                <div class="course-meta"><span>🎨 Design</span><span>⏱ 5 hours</span></div>
+                <h3>Graphic Design & Creativity</h3>
+                <p>Explore typography, color theory, branding and creative thinking.</p>
+                <div class="instructor-mini">
+                    <img src="https://i.pravatar.cc/100?img=5" alt="Instructor">
+                    <span>Olivia Parker</span>
+                    <span class="rating">★ 4.8</span>
+                </div>
+                <div class="course-footer"><strong>₹499</strong><button class="enroll-btn" data-course="Graphic Design & Creativity" data-price="₹499">Enroll ↗</button></div>
+            </div>
+        </article>
+
+        <article class="course-card" data-category="development" data-title="Python Programming">
+            <div class="course-image">
+                <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=85" alt="Python programming">
+            </div>
+            <div class="course-info">
+                <div class="course-meta"><span>💻 Development</span><span>⏱ 10 hours</span></div>
+                <h3>Python Programming for Beginners</h3>
+                <p>Start coding with Python and build your first real-world programs.</p>
+                <div class="instructor-mini">
+                    <img src="https://i.pravatar.cc/100?img=13" alt="Instructor">
+                    <span>Ryan Wilson</span>
+                    <span class="rating">★ 5.0</span>
+                </div>
+                <div class="course-footer"><strong>₹899</strong><button class="enroll-btn" data-course="Python Programming for Beginners" data-price="₹899">Enroll ↗</button></div>
+            </div>
+        </article>
+
+    </div>
+
+    <p class="no-results" id="noResults">No courses found. Try another search.</p>
+</section>
+
+<!-- LEARNING BANNER -->
+<section class="learning-banner">
+    <div class="banner-content">
+        <span class="section-tag">YOUR JOURNEY STARTS TODAY</span>
+        <h2>One skill can change<br>your <span>whole story.</span></h2>
+        <p>Don't wait for the perfect moment. Start learning today.</p>
+        <a href="#courses" class="banner-btn">Start learning now ↗</a>
+    </div>
+    <div class="banner-decoration">✳</div>
+</section>
+
+<!-- INSTRUCTORS -->
+<section class="instructors section-padding" id="instructors">
+    <div class="section-heading">
+        <div>
+            <span class="section-tag">LEARN FROM THE BEST</span>
+            <h2>Meet your <span>mentors.</span></h2>
+        </div>
+        <p class="heading-description">Real people. Real expertise.<br>Here to help you grow.</p>
+    </div>
+
+    <div class="instructor-grid">
+        <div class="instructor-card">
+            <img src="https://i.pravatar.cc/400?img=44" alt="Sarah Mitchell">
+            <h3>Sarah Mitchell</h3>
+            <p>UI/UX Designer</p>
+            <span>8 years of experience</span>
+        </div>
+        <div class="instructor-card">
+            <img src="https://i.pravatar.cc/400?img=11" alt="Alex Johnson">
+            <h3>Alex Johnson</h3>
+            <p>Full Stack Developer</p>
+            <span>10 years of experience</span>
+        </div>
+        <div class="instructor-card">
+            <img src="https://i.pravatar.cc/400?img=68" alt="David Carter">
+            <h3>David Carter</h3>
+            <p>Business Coach</p>
+            <span>12 years of experience</span>
+        </div>
+        <div class="instructor-card">
+            <img src="https://i.pravatar.cc/400?img=49" alt="Emily Rose">
+            <h3>Emily Rose</h3>
+            <p>Digital Marketer</p>
+            <span>7 years of experience</span>
+        </div>
+    </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews section-padding" id="reviews">
+    <div class="reviews-heading">
+        <span class="section-tag">STUDENT STORIES</span>
+        <h2>Good things happen<br>when you <span>learn.</span></h2>
+    </div>
+
+    <div class="review-grid">
+        <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>"I always wanted to learn design, but never knew where to begin. EduVibe made everything so simple and enjoyable."</p>
+            <div class="review-person">
+                <img src="https://i.pravatar.cc/100?img=12" alt="Student">
+                <div><strong>Ananya Sharma</strong><small>UI/UX Student</small></div>
+            </div>
+        </article>
+        <article class="review-card featured-review">
+            <div class="stars">★★★★★</div>
+            <p>"The instructors are amazing! I learned Python in a few weeks and even created my own project. Definitely worth it."</p>
+            <div class="review-person">
+                <img src="https://i.pravatar.cc/100?img=32" alt="Student">
+                <div><strong>Rahul Verma</strong><small>Programming Student</small></div>
+            </div>
+        </article>
+        <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>"Flexible, affordable and full of practical lessons. I can learn whenever I want and keep improving every day."</p>
+            <div class="review-person">
+                <img src="https://i.pravatar.cc/100?img=47" alt="Student">
+                <div><strong>Meera Reddy</strong><small>Marketing Student</small></div>
+            </div>
+        </article>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-main">
+        <div class="footer-brand">
+            <a href="#home" class="logo">edu<span>vibe.</span></a>
+            <p>Curiosity has no limits.<br>Neither should learning.</p>
+        </div>
+
+        <div class="footer-links">
+            <div><strong>Explore</strong><a href="#courses">Courses</a><a href="#instructors">Instructors</a><a href="#reviews">Reviews</a></div>
+            <div><strong>Community</strong><a href="#reviews">Student stories</a><a href="#courses">Learning paths</a><a href="#home">Our platform</a></div>
+            <div><strong>Connect</strong><a href="#home">Instagram ↗</a><a href="#home">LinkedIn ↗</a><a href="#home">Contact us</a></div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© <span id="year"></span> EduVibe Learning. All rights reserved.</p>
+        <p>Made with curiosity ✦</p>
+    </div>
+</footer>
+
+<!-- ENROLL MODAL -->
+<div class="modal" id="enrollModal">
+    <div class="modal-box">
+        <button class="close-modal" id="closeModal">×</button>
+        <span class="section-tag">START YOUR LEARNING JOURNEY</span>
+        <h2>You're one step<br>closer to <span>growth.</span></h2>
+        <p id="selectedCourse"></p>
+
+        <form id="enrollForm">
+            <input type="text" id="studentName" placeholder="Your full name" required>
+            <input type="email" id="studentEmail" placeholder="Your email address" required>
+            <button type="submit" class="primary-btn submit-btn">Confirm enrollment ↗</button>
+        </form>
+        <p id="enrollMessage"></p>
+    </div>
+</div>
+
+<!-- LOGIN MODAL -->
+<div class="modal" id="loginModal">
+    <div class="modal-box">
+        <button class="close-modal login-close">×</button>
+        <span class="section-tag">WELCOME BACK</span>
+        <h2>Ready to <span>learn?</span></h2>
+        <form id="loginForm">
+            <input type="email" id="loginEmail" placeholder="Your email address" required>
+            <input type="password" id="loginPassword" placeholder="Password" required>
+            <button type="submit" class="primary-btn submit-btn">Log in ↗</button>
+        </form>
+        <p id="loginMessage"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
